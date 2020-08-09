@@ -76,7 +76,7 @@ def calc_embs(image, margin=10):
 
     # invoke endpoint, truyền vào image, endpoint trả về vector đầu ra bức ảnh
     response = client.invoke_endpoint(EndpointName=ENDPOINT_NAME, ContentType='application/json',
-                                      Body=json.dumps(prewhiten_images))
+                                      Body=json.dumps(prewhiten_images.tolist()))
     predicts = json.loads(response['Body'].read())['predictions']
 
     embs = []
