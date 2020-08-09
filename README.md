@@ -3,6 +3,10 @@
 
 AWS-API-Facenet
 
+## Image:
+
+![Image](https://github.com/WHKnightZ/AWS-Facenet/blob/master/test.png)
+
 ## References:
 
 - https://github.com/davidsandberg/facenet
